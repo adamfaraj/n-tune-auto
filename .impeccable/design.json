@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-15T00:00:00Z",
+  "title": "Design System: N-Tune Automotive",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#f2ece0", "tonalRamp": ["#221f1a", "#3a3527", "#55503f", "#75705a", "#a89f80", "#d8cfb8", "#f2ece0", "#f8f4ea"] },
+      "paper-raised": { "role": "neutral", "displayName": "Raised Paper", "canonical": "#f8f4ea", "tonalRamp": ["#221f1a", "#3a3527", "#55503f", "#75705a", "#a89f80", "#d8cfb8", "#f2ece0", "#f8f4ea"] },
+      "paper-line": { "role": "neutral", "displayName": "Paper Hairline", "canonical": "#d8cfb8", "tonalRamp": ["#221f1a", "#3a3527", "#55503f", "#75705a", "#a89f80", "#c7bfa8", "#d8cfb8", "#f2ece0"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#221f1a", "tonalRamp": ["#0e0c0a", "#221f1a", "#3a3527", "#55503f", "#5c5644", "#75705a", "#a89f80", "#d8cfb8"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#55503f", "tonalRamp": ["#221f1a", "#3a3527", "#55503f", "#6b664f", "#847e63", "#9d9679", "#bab48f", "#d8cfb8"] },
+      "ink-faint": { "role": "neutral", "displayName": "Faint Ink", "canonical": "#5c5644", "tonalRamp": ["#221f1a", "#3a3527", "#5c5644", "#726b53", "#8a8264", "#a49b78", "#c0b590", "#d8cfb8"] },
+      "steel": { "role": "neutral", "displayName": "Steel Chrome", "canonical": "#4c5a5f", "tonalRamp": ["#1c2224", "#2c3639", "#3d494d", "#4c5a5f", "#647377", "#829094", "#a5b1b3", "#c7bfa8"] },
+      "steel-line": { "role": "neutral", "displayName": "Steel Rule", "canonical": "#c7bfa8", "tonalRamp": ["#4c5a5f", "#75705a", "#a89f80", "#b8b096", "#c7bfa8", "#d8d1bb", "#e6e0cd", "#f2ece0"] },
+      "stamp-teal": { "role": "primary", "displayName": "Inspection Stamp Teal", "canonical": "#1f6f5c", "tonalRamp": ["#0d2e26", "#164f42", "#1f6f5c", "#278a73", "#3aa78d", "#65bfa9", "#96d6c4", "#c9ede2"] },
+      "stamp-teal-dark": { "role": "primary", "displayName": "Deep Stamp Teal", "canonical": "#164f42", "tonalRamp": ["#081f1a", "#0d2e26", "#164f42", "#1f6f5c", "#278a73", "#3aa78d", "#65bfa9", "#96d6c4"] },
+      "stamp-red": { "role": "secondary", "displayName": "Stamped Ink Red", "canonical": "#a83729", "tonalRamp": ["#3f130e", "#5f1e16", "#832a1f", "#a83729", "#c24a3a", "#d66c5c", "#e79689", "#f4c6bd"] },
+      "stamp-red-dark": { "role": "secondary", "displayName": "Deep Stamp Red", "canonical": "#832a1f", "tonalRamp": ["#2e0e09", "#3f130e", "#5f1e16", "#832a1f", "#a83729", "#c24a3a", "#d66c5c", "#e79689"] },
+      "kuruma-blue": { "role": "tertiary", "displayName": "KurumaWorks Blue (cross-site exception)", "canonical": "#2663eb", "tonalRamp": ["#0d2668", "#153a94", "#1e4fc0", "#2663eb", "#4f81ef", "#7ea3f3", "#aec5f7", "#dee7fc"] },
+      "dark-ground": { "role": "neutral", "displayName": "Dark Ground", "canonical": "#1c1915", "tonalRamp": ["#0a0908", "#1c1915", "#2f2a22", "#413a2e", "#544a37", "#6f6449", "#948765", "#c7bea3"] },
+      "dark-text": { "role": "neutral", "displayName": "Paper on Dark", "canonical": "#f2ece0", "tonalRamp": ["#1c1915", "#3a3527", "#55503f", "#75705a", "#a89f80", "#c7bea3", "#d8cfb8", "#f2ece0"] },
+      "dark-text-soft": { "role": "neutral", "displayName": "Soft Paper on Dark", "canonical": "#c7bea3", "tonalRamp": ["#1c1915", "#3a3527", "#544a37", "#6f6449", "#948765", "#ab9f7e", "#c7bea3", "#e6ddc7"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only; Big Shoulders industrial signage face." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings, Big Shoulders." },
+      "title": { "displayName": "Title", "purpose": "Ledger entry titles, service-panel titles, visit-card fact values." },
+      "body": { "displayName": "Body", "purpose": "All paragraph copy, Libre Franklin, never displayed at display sizes." },
+      "label": { "displayName": "Label", "purpose": "Micro-labels and dates only (Courier Prime): phone label, hours, seal ring text, visit dt labels. Never paragraphs or headlines." }
+    },
+    "shadows": [
+      { "name": "header-scroll", "value": "0 6px 18px -12px rgba(34, 31, 26, 0.35)", "purpose": "Signals the sticky header now floats above scrolled content." },
+      { "name": "mobile-bar", "value": "0 -8px 20px -14px rgba(34, 31, 26, 0.45)", "purpose": "Permanent lift under the fixed mobile sticky action bar." }
+    ],
+    "motion": [
+      { "name": "ease-ledger-reveal", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Exponential ease-out for ledger entry reveal (opacity + transform), 480ms. No bounce/elastic easing is used anywhere in the build." }
+    ],
+    "breakpoints": [
+      { "name": "xs", "value": "339px" },
+      { "name": "sm", "value": "559px" },
+      { "name": "sm-md", "value": "640px" },
+      { "name": "md", "value": "680px" },
+      { "name": "md-lg", "value": "760px" },
+      { "name": "lg", "value": "899px" },
+      { "name": "xl", "value": "960px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "KurumaWorks Booking Button",
+      "kind": "button",
+      "refersTo": "button-kuruma",
+      "description": "Cross-site booking CTA; solid KurumaWorks blue, inverts on hover. Used in header, hero, visit card, and mobile bar.",
+      "html": "<a class=\"ds-btn-kuruma\" href=\"#\">Book Now on KurumaWorks</a>",
+      "css": ".ds-btn-kuruma { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: #2663eb; color: #fff; border: 2px solid #2663eb; font-family: 'Libre Franklin', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.65rem 1.3rem; border-radius: 4px; text-decoration: none; white-space: nowrap; transition: background 150ms ease, color 150ms ease; } .ds-btn-kuruma:hover, .ds-btn-kuruma:focus-visible { background: #fff; color: #2663eb; }"
+    },
+    {
+      "name": "Secondary Call Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ink-bordered secondary action, used for the hero and mobile-bar 'Call' link.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"tel:+19194012612\">Call (919) 401-2612</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.95rem 1.6rem; border: 2px solid #221f1a; border-radius: 4px; color: #221f1a; text-decoration: none; font-weight: 700; font-size: 1.05rem; transition: background 150ms ease, color 150ms ease; } .ds-btn-secondary:hover, .ds-btn-secondary:focus-visible { background: #221f1a; color: #f2ece0; }"
+    },
+    {
+      "name": "Sticky Header",
+      "kind": "nav",
+      "refersTo": "site-header",
+      "description": "Sticky header: logo/wordmark left, real phone + hours, KurumaWorks CTA right. Floats above content with a soft shadow once scrolled.",
+      "html": "<header class=\"ds-header\"><div class=\"ds-header__brand\">N-Tune <span>AUTOMOTIVE</span></div><div class=\"ds-header__contact\"><a class=\"ds-header__phone\" href=\"tel:+19194012612\"><span class=\"ds-header__phone-label\">Call</span><span class=\"ds-header__phone-number\">(919) 401-2612</span></a><span class=\"ds-header__hours\">Mon&ndash;Fri 8&ndash;5</span></div><a class=\"ds-btn-kuruma\" href=\"#\">Book Now</a></header>",
+      "css": ".ds-header { display: flex; align-items: center; gap: 1.5rem; height: 76px; padding: 0 1.5rem; background: #f8f4ea; border-bottom: 1px solid #d8cfb8; font-family: 'Libre Franklin', sans-serif; } .ds-header--scrolled { box-shadow: 0 6px 18px -12px rgba(34, 31, 26, 0.35); } .ds-header__brand { font-family: 'Big Shoulders', sans-serif; font-weight: 800; font-size: 1.3rem; color: #221f1a; } .ds-header__contact { margin-left: auto; display: flex; align-items: baseline; gap: 0.9rem; font-family: 'Courier Prime', monospace; } .ds-header__phone-label { font-size: 0.7rem; letter-spacing: 0.08em; color: #5c5644; text-transform: uppercase; } .ds-header__phone-number { font-weight: 700; color: #221f1a; } .ds-header__hours { font-size: 0.8rem; color: #5c5644; } .ds-btn-kuruma { background: #2663eb; color: #fff; border: 2px solid #2663eb; font-weight: 700; padding: 0.65rem 1.3rem; border-radius: 4px; text-decoration: none; } .ds-btn-kuruma:hover { background: #fff; color: #2663eb; }"
+    },
+    {
+      "name": "Ledger Entry",
+      "kind": "custom",
+      "refersTo": "ledger-entry",
+      "description": "Signature accumulating trust-record entry: an ink-edge-filtered circular stamp beside a title/body pair, revealed on scroll with exponential ease-out settle.",
+      "html": "<div class=\"ds-ledger-entry\"><div class=\"ds-ledger-stamp\">1999</div><div><h3 class=\"ds-ledger-title\">Family Owned Since 1999</h3><p class=\"ds-ledger-text\">Serving Durham and Orange Counties for over 25 years.</p></div></div>",
+      "css": ".ds-ledger-entry { display: grid; grid-template-columns: 72px 1fr; gap: 1.5rem; align-items: start; padding: 2rem 0; border-bottom: 1px solid #d8cfb8; opacity: 1; } .ds-ledger-stamp { font-family: 'Big Shoulders', sans-serif; font-weight: 800; font-size: 0.95rem; color: #164f42; border: 2px solid #1f6f5c; border-radius: 50%; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; text-align: center; transform: rotate(-6deg); } .ds-ledger-title { font-family: 'Big Shoulders', sans-serif; font-weight: 700; font-size: 1.35rem; margin: 0.15rem 0 0.5rem; } .ds-ledger-text { margin: 0; color: #55503f; }"
+    },
+    {
+      "name": "Service Badge Panel",
+      "kind": "card",
+      "refersTo": "service-panel",
+      "description": "Ink-edge-filtered ringed badge (circle/octagon/scallop) with a centered icon, title, and description. Three variants alternate ring color between stamp teal and stamp red.",
+      "html": "<article class=\"ds-service-panel\"><div class=\"ds-service-badge\"><svg viewBox=\"0 0 120 120\"><circle cx=\"60\" cy=\"60\" r=\"54\" class=\"ds-service-badge-ring\"/></svg></div><h3 class=\"ds-service-title\">General Repair &amp; Maintenance</h3><p class=\"ds-service-text\">Oil changes, brakes, and the routine work that keeps your car reliable.</p></article>",
+      "css": ".ds-service-panel { text-align: left; } .ds-service-badge { width: 84px; height: 84px; margin-bottom: 1.2rem; } .ds-service-badge-ring { fill: none; stroke: #1f6f5c; stroke-width: 2; } .ds-service-title { font-family: 'Big Shoulders', sans-serif; font-weight: 700; font-size: 1.4rem; margin: 0 0 0.6rem; } .ds-service-text { margin: 0; color: #55503f; max-width: 38ch; }"
+    },
+    {
+      "name": "Visit Card (dark)",
+      "kind": "card",
+      "refersTo": "visit-card",
+      "description": "The page's one deliberately dark surface: address/phone/hours as a definition-list ledger, plus the large KurumaWorks CTA.",
+      "html": "<div class=\"ds-visit-card\"><dl class=\"ds-visit-facts\"><div><dt>Phone</dt><dd>(919) 401-2612</dd></div></dl><a class=\"ds-btn-kuruma\" href=\"#\">Book Now on KurumaWorks</a></div>",
+      "css": ".ds-visit-card { background: #1c1915; color: #f2ece0; border-radius: 6px; padding: 3rem; } .ds-visit-facts dt { font-family: 'Courier Prime', monospace; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: #c7bea3; margin-bottom: 0.5rem; } .ds-visit-facts dd { margin: 0; font-family: 'Big Shoulders', sans-serif; font-weight: 700; font-size: 1.35rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Service Record",
+    "overview": "The site presents every credibility claim as an official stamped service record rather than a marketing promise. Trust is proven the way a real shop proves it: dated ledger entries, inked seals, ring-stamped badges, a typewriter ticket face for dates and labels. The world deliberately refuses both auto-shop defaults: no checkered-flag/racing-stripe motifs, and no sterile tech-startup gloss. Color is almost entirely achromatic (warm paper, ink, steel); the only chroma in the system is reserved for stamp/seal ink itself, never washed across backgrounds or large fields. The one confirmed exception is `.btn-kuruma`, the KurumaWorks booking button, which uses KurumaWorks blue (#2663eb) -- a standing cross-site brand requirement from the reusable KurumaWorks template (PRODUCT.md > Brand Commitments), not a local palette choice. It is intentionally excluded from the stamp-ink accent rule so the booking action reads identically across every business site on the template.",
+    "keyCharacteristics": [
+      "Warm paper/ink/steel palette, achromatic except at stamp/seal edges",
+      "Big Shoulders for display numerals and headlines only; Libre Franklin for all body/UI; Courier Prime confined to micro-labels and dates",
+      "Hairline-rule section dividers, never shadow-card chrome",
+      "A shared SVG ink-edge filter (feTurbulence + feDisplacementMap) textures every stamp, seal, and badge ring identically",
+      "Ledger entries accumulate into view with an exponential ease-out, never a bounce"
+    ],
+    "rules": [
+      { "name": "The Ink-Only Rule", "body": "Stamp teal and stamp red appear exclusively inside stamp, seal, and badge marks (rings, borders, stamp text). They never fill a background, a button (other than as a ring stroke), or a large field.", "section": "colors" },
+      { "name": "The KurumaWorks Exception", "body": "`.btn-kuruma` is the single, standing exception to the Ink-Only Rule: it always uses KurumaWorks blue, sourced from the cross-site booking template, regardless of the host site's own palette.", "section": "colors" },
+      { "name": "The Three-Tier Rule", "body": "Big Shoulders is for display/numerals only, Libre Franklin is for all body and UI text, and Courier Prime is for micro-labels and dates only. No face crosses into another's role anywhere on the page.", "section": "typography" },
+      { "name": "The No-Card-Shadow Rule", "body": "No shadow-card chrome appears on any content panel, ledger entry, or service panel. Shadows are reserved for elements that are literally fixed/sticky above the page (header once scrolled, mobile bar).", "section": "elevation" }
+    ],
+    "dos": [
+      "Do confine Big Shoulders to display/numeral roles, Libre Franklin to body/UI, and Courier Prime to micro-labels/dates -- never mix roles.",
+      "Do keep stamp teal and stamp red inside stamp/seal/badge marks only.",
+      "Do use the shared #ink-edge filter for any new stamp, seal, or badge element so the ink-textured edge stays consistent.",
+      "Do use hairline rules (--paper-line / --dark-paper-line) to separate sections.",
+      "Do use cubic-bezier(0.16, 1, 0.3, 1) exponential ease-out for reveal/settle motion; pair any IntersectionObserver reveal with a scroll-based fallback so content isn't permanently hidden on fast/instant scroll."
+    ],
+    "donts": [
+      "Don't wash stamp teal or stamp red across a background, large field, or non-mark component.",
+      "Don't recolor .btn-kuruma to match this site's local palette -- it is a fixed cross-site brand exception.",
+      "Don't add shadow-card chrome to panels, ledger entries, or service badges; shadows are reserved for genuinely fixed/sticky elements.",
+      "Don't use bounce or elastic easing anywhere; motion settles, it doesn't overshoot.",
+      "Don't introduce kickers/eyebrows, hard-offset neobrutalist shadows, glyph icon fonts, or system display faces -- none exist in the shipped build, and none fit this restrained, ink-stamped world."
+    ]
+  }
+}

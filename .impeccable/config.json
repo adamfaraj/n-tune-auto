@@ -1,0 +1,36 @@
+{
+  "buildPath": "code",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "src/index.html"
+        ],
+        "createdAt": "2026-09-15T17:22:19.461Z",
+        "reason": "False positive: computed styles confirm .hero/.ledger/.visit sections have 49-64px padding via var(--section-pad)/var(--gutter)/clamp(), which the static detector can't resolve; verified via getComputedStyle in-browser."
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "src/index.html"
+        ],
+        "createdAt": "2026-09-15T17:22:19.475Z",
+        "reason": "Sanctioned exception: flags the aria-hidden decorative SVG seal-ring label (N-TUNE AUTOMOTIVE / DURHAM, NC) on the hero stamp graphic, not readable body prose; tracked all-caps around a ring is domain-appropriate for an official-seal motif per the approved direction contract."
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "src/index.html"
+        ],
+        "createdAt": "2026-09-15T17:22:19.487Z",
+        "reason": "Deliberate, not reflex: the approved direction contract (.impeccable/surfaces/src-index-html.md) commits to a warm paper/manila ground as the OWN-WORLD of the approved 'Service Record' direction, chosen through the concept-seed direction round, with saturated color reserved for stamp/seal ink only."
+      }
+    ]
+  }
+}
