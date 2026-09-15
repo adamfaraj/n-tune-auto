@@ -45,7 +45,7 @@ typography:
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "Courier Prime, monospace"
+    fontFamily: "IBM Plex Mono, monospace"
     fontSize: "0.75rem"
     fontWeight: 400
     letterSpacing: "0.14em"
@@ -88,7 +88,7 @@ The brand teal (`#0e4b5e`) is sampled directly from the shop's logo (`public/log
 
 **Key Characteristics:**
 - Warm paper/ink/steel palette, with stamp teal (sampled from the shop's own logo) and stamp red as the system's only chroma
-- Big Shoulders for display numerals and headlines only; Libre Franklin for all body/UI; Courier Prime confined to micro-labels and dates
+- Big Shoulders for display numerals and headlines only; Libre Franklin for all body/UI; IBM Plex Mono confined to micro-labels and dates
 - Hairline-rule section dividers, never shadow-card chrome
 - A shared SVG ink-edge filter (feTurbulence + feDisplacementMap) textures every stamp, seal, and badge ring identically
 - Ledger entries accumulate into view with an exponential ease-out, never a bounce
@@ -128,19 +128,19 @@ The palette is restrained by design: warm neutrals carry nearly the entire page,
 
 **Display Font:** Big Shoulders (variable, with sans-serif fallback)
 **Body Font:** Libre Franklin (with sans-serif fallback)
-**Label/Mono Font:** Courier Prime (with monospace fallback)
+**Label/Mono Font:** IBM Plex Mono (with monospace fallback)
 
-**Character:** An industrial permit/signage face (Big Shoulders) paired with a plain civic grotesk (Libre Franklin) and a typewriter-ledger accent (Courier Prime). Each face is confined to one role; none doubles as another's job.
+**Character:** An industrial permit/signage face (Big Shoulders) paired with a plain civic grotesk (Libre Franklin) and a modern sans-serif monospace ledger accent (IBM Plex Mono). Each face is confined to one role; none doubles as another's job. IBM Plex Mono replaced Courier Prime in this role by explicit request, to keep the tabular ticket-stub feel of micro-labels without a dated typewriter/slab-serif character; it does not touch Big Shoulders' industrial headline identity.
 
 ### Hierarchy
 - **Display** (800, `clamp(2.75rem, 6.4vw, 4.6rem)`, line-height 0.98): the hero headline only.
 - **Headline** (800, `clamp(2rem, 4.2vw, 2.9rem)`, line-height 1.05): section headings (`.section-heading`).
 - **Title** (700, 1.35 to 1.4rem, tight tracking): ledger entry titles, service-panel titles, visit-card fact values.
 - **Body** (400, 1rem, line-height 1.6): all paragraph copy (Libre Franklin); section ledes run larger at 1.1rem, max 58ch.
-- **Label** (400, 0.7 to 0.85rem, letter-spacing 0.08 to 0.25em, Courier Prime): phone label, hours, hero meta line, seal ring text/tag, visit-card `dt` labels, brand sub-line ("AUTOMOTIVE"). Always micro-labels or dates, never paragraphs or headlines.
+- **Label** (400, 0.7 to 0.85rem, letter-spacing 0.08 to 0.25em, IBM Plex Mono): phone label, hours, hero meta line, seal ring text/tag, visit-card `dt` labels, brand sub-line ("AUTOMOTIVE"). Always micro-labels or dates, never paragraphs or headlines.
 
 ### Named Rules
-**The Three-Tier Rule.** Big Shoulders is for display/numerals only, Libre Franklin is for all body and UI text, and Courier Prime is for micro-labels and dates only. No face crosses into another's role anywhere on the page.
+**The Three-Tier Rule.** Big Shoulders is for display/numerals only, Libre Franklin is for all body and UI text, and IBM Plex Mono is for micro-labels and dates only. No face crosses into another's role anywhere on the page.
 
 ## Layout
 
@@ -188,7 +188,7 @@ Three ink-edge-filtered SVG badge shapes (circle, octagon, scallop) ringed in st
 ## Do's and Don'ts
 
 ### Do:
-- **Do** confine Big Shoulders to display/numeral roles, Libre Franklin to body/UI, and Courier Prime to micro-labels/dates; never mix roles.
+- **Do** confine Big Shoulders to display/numeral roles, Libre Franklin to body/UI, and IBM Plex Mono to micro-labels/dates; never mix roles.
 - **Do** keep stamp teal and stamp red inside stamp/seal/badge marks, plus the closed set of brand-carrying details named in the Logo-Teal Rule (header subline, secondary button, service icon fills, dark-surface link hovers).
 - **Do** use the shared `#ink-edge` filter for any new stamp, seal, or badge element so the ink-textured edge stays consistent.
 - **Do** use hairline rules (`--paper-line` / `--dark-paper-line`) to separate sections.

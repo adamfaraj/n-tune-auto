@@ -1,5 +1,5 @@
 // TODO: replace with N-Tune Automotive's real KurumaWorks shop id once available.
-const KURUMA_SHOP_ID = "PLACEHOLDER_SHOP_ID";
+const KURUMA_SHOP_ID = "eecf5042-1d4f-4779-af29-efd03c1f845c";
 const KURUMA_URL = `https://kurumaworks.com/shop?id=${KURUMA_SHOP_ID}`;
 
 document.querySelectorAll(
