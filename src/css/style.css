@@ -1,5 +1,5 @@
 /* ============================================================
-   N-Tune Automotive — "The Service Record"
+   N-Tune Automotive: "The Service Record"
    Direction: official stamps/seals/ledger language. Restrained
    paper + ink + steel palette; color reserved for stamp/seal ink.
    ============================================================ */
@@ -17,8 +17,9 @@
   --steel: #4c5a5f;
   --steel-line: #c7bfa8;
 
-  --stamp-teal: #1f6f5c;
-  --stamp-teal-dark: #164f42;
+  --stamp-teal: #0e4b5e;
+  --stamp-teal-dark: #0a3541;
+  --stamp-teal-light: #4fa3bd;
   --stamp-red: #a83729;
   --stamp-red-dark: #832a1f;
 
@@ -32,7 +33,7 @@
   /* Type */
   --font-display: "Big Shoulders", sans-serif;
   --font-body: "Libre Franklin", sans-serif;
-  --font-mono: "Courier Prime", monospace;
+  --font-mono: "IBM Plex Mono", monospace;
 
   /* Spacing */
   --gutter: clamp(1.25rem, 4vw, 3rem);
@@ -179,7 +180,7 @@ a {
   font-weight: 400;
   font-size: 0.7rem;
   letter-spacing: 0.14em;
-  color: var(--ink-faint);
+  color: var(--stamp-teal);
 }
 
 .site-header__contact {
@@ -303,9 +304,9 @@ a {
   align-items: center;
   gap: 0.55rem;
   padding: 0.95rem 1.6rem;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--stamp-teal);
   border-radius: 4px;
-  color: var(--ink);
+  color: var(--stamp-teal);
   text-decoration: none;
   font-weight: 700;
   font-size: 1.05rem;
@@ -314,7 +315,7 @@ a {
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
-  background: var(--ink);
+  background: var(--stamp-teal);
   color: var(--paper);
 }
 
@@ -331,7 +332,7 @@ a {
 .hero {
   padding: clamp(3rem, 8vw, 6rem) var(--gutter) clamp(3.5rem, 8vw, 6rem);
   background:
-    radial-gradient(ellipse at 88% 8%, rgba(31, 111, 92, 0.08), transparent 45%),
+    radial-gradient(ellipse at 88% 8%, rgba(14, 75, 94, 0.08), transparent 45%),
     var(--paper);
   border-bottom: 1px solid var(--paper-line);
 }
@@ -607,7 +608,11 @@ a {
   width: 34px;
   height: 34px;
   transform: translate(-50%, -50%);
-  fill: var(--ink);
+  fill: var(--stamp-teal-dark);
+}
+
+.service-panel--octagon .service-panel__icon {
+  fill: var(--stamp-red-dark);
 }
 
 .service-panel__title {
@@ -685,7 +690,7 @@ a {
 }
 
 .visit__fact a:hover {
-  border-color: var(--stamp-teal);
+  border-color: var(--stamp-teal-light);
 }
 
 /* ============================================================
@@ -756,7 +761,7 @@ a {
 }
 
 .site-footer__contact a:hover {
-  color: var(--dark-text);
+  color: var(--stamp-teal-light);
 }
 
 .site-footer__legal {
@@ -797,9 +802,9 @@ a {
   align-items: center;
   gap: 0.45rem;
   padding: 0.8rem 1.1rem;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--stamp-teal);
   border-radius: 4px;
-  color: var(--ink);
+  color: var(--stamp-teal);
   text-decoration: none;
   font-weight: 700;
 }
